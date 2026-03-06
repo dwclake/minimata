@@ -1,17 +1,19 @@
-import { Config } from '@sveltejs/kit';
-import { PreprocessorGroup } from 'svelte/compiler';
-import adapter from 'svelte-adapter-bun';
+import { Config } from "@sveltejs/kit";
+import { PreprocessorGroup } from "svelte/compiler";
+import adapter from "svelte-adapter-bun";
 // import adapter from '@sveltejs/adapter-static';
-import { mdsvex } from 'mdsvex';
+import { mdsvex } from "mdsvex";
 
 const config: Config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$components: 'src/lib/components',
-			$assets: 'src/lib/assets',
-			$state: 'src/lib/state',
-			$routes: 'src/routes'
+			$components: "src/lib/components",
+			$assets: "src/lib/assets",
+			$state: "src/lib/state",
+			$algorithms: "src/lib/algorithms",
+			$functions: "src/lib/functions",
+			$routes: "src/routes"
 		},
 		experimental: {
 			remoteFunctions: true
@@ -26,10 +28,8 @@ const config: Config = {
 			}
 		}
 	},
-	preprocess: [
-		mdsvex() as PreprocessorGroup
-	],
-	extensions: ['.svelte', '.svx'],
+	preprocess: [mdsvex() as PreprocessorGroup],
+	extensions: [".svelte", ".svx"],
 	compilerOptions: {
 		experimental: {
 			async: true
