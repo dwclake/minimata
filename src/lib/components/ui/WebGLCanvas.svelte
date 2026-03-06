@@ -3,12 +3,12 @@
 
 	type Props = {
 		children?: Snippet;
-	}
+	};
 
 	const { children }: Props = $props();
 </script>
 
-<canvas class="webgl-canvas">
+<canvas class="webgl-canvas default-colours default-margin default-shadow">
 	{@render children?.()}
 </canvas>
 
@@ -16,6 +16,6 @@
 	@reference "$routes/layout.css";
 
 	.webgl-canvas {
-
+		@apply border;
 	}
 </style>

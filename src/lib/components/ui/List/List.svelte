@@ -3,12 +3,12 @@
 
 	type Props = {
 		children?: Snippet;
-	}
+	};
 
 	const { children }: Props = $props();
 </script>
 
-<ul class="list">
+<ul class="list default-colours default-margin default-shadow">
 	{@render children?.()}
 </ul>
 
@@ -16,6 +16,6 @@
 	@reference "$routes/layout.css";
 
 	.list {
-
+		@apply border;
 	}
 </style>

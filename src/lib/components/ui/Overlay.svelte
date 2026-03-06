@@ -3,12 +3,12 @@
 
 	type Props = {
 		children?: Snippet;
-	}
+	};
 
 	const { children }: Props = $props();
 </script>
 
-<div class="overlay">
+<div class="overlay default-colours default-margin">
 	{@render children?.()}
 </div>
 
@@ -16,6 +16,6 @@
 	@reference "$routes/layout.css";
 
 	.overlay {
-
+		@apply p-2;
 	}
 </style>

@@ -3,12 +3,12 @@
 
 	type Props = {
 		children?: Snippet;
-	}
+	};
 
 	const { children }: Props = $props();
 </script>
 
-<div class="popup">
+<div class="popup default-margin default-colours default-shadow">
 	{@render children?.()}
 </div>
 
@@ -16,6 +16,6 @@
 	@reference "$routes/layout.css";
 
 	.popup {
-
+		@apply border;
 	}
 </style>

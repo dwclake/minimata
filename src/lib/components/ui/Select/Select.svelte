@@ -3,12 +3,12 @@
 
 	type Props = {
 		children?: Snippet;
-	}
+	};
 
 	const { children }: Props = $props();
 </script>
 
-<select class="select">
+<select class="select default-colours default-margin default-shadow">
 	{@render children?.()}
 </select>
 
@@ -16,6 +16,6 @@
 	@reference "$routes/layout.css";
 
 	.select {
-
+		@apply border;
 	}
 </style>

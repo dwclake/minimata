@@ -3,7 +3,7 @@
 
 	type Props = {
 		children?: Snippet;
-	}
+	};
 
 	const { children }: Props = $props();
 </script>
@@ -16,6 +16,5 @@
 	@reference "$routes/layout.css";
 
 	.option {
-
 	}
 </style>

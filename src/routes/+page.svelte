@@ -11,11 +11,16 @@
 		Textarea,
 		WebGLCanvas
 	} from "$components/ui";
+
+	let button_text = $state("click me");
+	const onclick = () => {
+		button_text = "clicked";
+	};
 </script>
 
-<main class="home-container">
+<main class="home-container page-margin">
 	<h1>Welcome to Minima</h1>
-	<Button>Click me</Button>
+	<Button {onclick}>{button_text}</Button>
 	<Card>Im a card</Card>
 	<List>
 		<Item>Im an item</Item>
@@ -35,6 +40,6 @@
 	@reference "$routes/layout.css";
 
 	.home-container {
-		@apply flex flex-col items-center gap-4 p-8 bg-mirage-400 size-full;
+		@apply flex size-full flex-col items-center gap-4 text-xl text-olive-200;
 	}
 </style>

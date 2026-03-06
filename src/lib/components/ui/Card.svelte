@@ -3,12 +3,12 @@
 
 	type Props = {
 		children?: Snippet;
-	}
+	};
 
 	const { children }: Props = $props();
 </script>
 
-<div class="card">
+<div class="card default-colours default-margin default-shadow">
 	{@render children?.()}
 </div>
 
@@ -16,6 +16,6 @@
 	@reference "$routes/layout.css";
 
 	.card {
-
+		@apply border;
 	}
 </style>
