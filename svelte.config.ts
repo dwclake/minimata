@@ -9,7 +9,12 @@ const config: Config = {
 	preprocess: [
 		mdsvex() as PreprocessorGroup
 	],
-	extensions: ['.svelte', '.svx']
+	extensions: ['.svelte', '.svx'],
+	alias: {
+		$components: 'src/lib/components',
+		$assets: 'src/lib/assets',
+		$state: 'src/lib/state'
+	}
 };
 
 export default config;
