@@ -13,7 +13,7 @@
 	html,
 	body,
 	#svelte {
-		@apply size-full bg-oxide-900/85 text-base;
+		@apply size-full bg-mirage-900/85 text-base;
 	}
 }
 
@@ -23,35 +23,35 @@
 	}
 
 	.default-colours {
-		@apply border-mirage-950 bg-orchid/40 text-olive-200;
-	}
-
-	.alt-colours {
 		@apply border-mirage-300 bg-mirage-700/30 text-olive-200;
 	}
 
+	.alt-colours {
+		@apply border-mirage-950 bg-orchid/40 text-olive-200;
+	}
+
 	.hover-colours {
-		@apply hover:border-mirage-300 hover:bg-mirage-700/30 hover:text-olive-200;
+		@apply hover:border-mirage-950 hover:bg-orchid/40;
 	}
 
 	.active-colours {
-		@apply active:bg-mirage-950/30;
+		@apply active:bg-orchid/30;
 	}
 
 	.default-shadow {
-		@apply shadow-mirage-950;
-	}
-
-	.alt-shadow {
 		@apply shadow-mirage-300;
 	}
 
+	.alt-shadow {
+		@apply shadow-mirage-950;
+	}
+
 	.hover-shadow {
-		@apply hover:shadow-mirage-300;
+		@apply hover:shadow-mirage-950;
 	}
 
 	.active-shadow {
-		@apply active:shadow-sm-mirage-300/50;
+		@apply active:shadow-sm-mirage-950/50;
 	}
 
 	.default-margin {
