@@ -1,17 +1,16 @@
 <script lang="ts">
-	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import "./layout.css";
+	import favicon from "$lib/assets/favicon.svg";
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<title>Minima</title>
+	<title>MINIMATA</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
 {@render children()}
 
 <style lang="postcss">
-
 </style>

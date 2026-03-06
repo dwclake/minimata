@@ -19,7 +19,7 @@
 </script>
 
 <main class="home-container page-margin">
-	<h1>Welcome to Minima</h1>
+	<h1>MINIMATA</h1>
 	<Button {onclick}>{button_text}</Button>
 	<Card>Im a card</Card>
 	<List>
