@@ -2,17 +2,19 @@
 	import type { Snippet } from "svelte";
 
 	type Props = {
-		children: Snippet;
+		children?: Snippet;
 	}
 
-	const { children } = $props() as Props;
+	const { children }: Props = $props();
 </script>
 
 <canvas class="webgl-canvas">
-	{@render children()}
+	{@render children?.()}
 </canvas>
 
 <style lang="postcss">
+	@reference "$routes/layout.css";
+
 	.webgl-canvas {
 
 	}

@@ -2,17 +2,19 @@
 	import type { Snippet } from "svelte";
 
 	type Props = {
-		children: Snippet;
+		children?: Snippet;
 	}
 
-	const { children } = $props() as Props;
+	const { children }: Props = $props();
 </script>
 
 <button class="btn">
-	{@render children()}
+	{@render children?.()}
 </button>
 
 <style lang="postcss">
+	@reference "$routes/layout.css";
+
 	.btn {
 
 	}

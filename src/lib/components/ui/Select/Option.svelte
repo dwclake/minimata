@@ -8,14 +8,14 @@
 	const { children }: Props = $props();
 </script>
 
-<div class="card">
+<option class="option">
 	{@render children?.()}
-</div>
+</option>
 
 <style lang="postcss">
 	@reference "$routes/layout.css";
 
-	.card {
+	.option {
 
 	}
 </style>

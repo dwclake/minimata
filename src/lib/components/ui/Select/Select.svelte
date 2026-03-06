@@ -2,17 +2,19 @@
 	import type { Snippet } from "svelte";
 
 	type Props = {
-		children: Snippet;
+		children?: Snippet;
 	}
 
-	const { children } = $props() as Props;
+	const { children }: Props = $props();
 </script>
 
 <select class="select">
-	{@render children()}
+	{@render children?.()}
 </select>
 
 <style lang="postcss">
+	@reference "$routes/layout.css";
+
 	.select {
 
 	}

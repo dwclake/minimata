@@ -7,7 +7,9 @@
 </textarea>
 
 <style lang="postcss">
-	.textarea {
+	@reference "$routes/layout.css";
 
+	.textarea {
+		resize: none;
 	}
 </style>

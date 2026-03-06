@@ -2,17 +2,19 @@
 	import type { Snippet } from "svelte";
 
 	type Props = {
-		children: Snippet;
+		children?: Snippet;
 	}
 
-	const { children } = $props() as Props;
+	const { children }: Props = $props();
 </script>
 
 <div class="overlay">
-	{@render children()}
+	{@render children?.()}
 </div>
 
 <style lang="postcss">
+	@reference "$routes/layout.css";
+
 	.overlay {
 
 	}
