@@ -16,6 +16,6 @@
 	@reference "$routes/layout.css";
 
 	.overlay {
-		@apply p-2;
+		@apply p-2 shadow-none border-none;
 	}
 </style>

@@ -8,7 +8,7 @@
 	const { children }: Props = $props();
 </script>
 
-<ul class="list default-colours default-margin default-shadow">
+<ul class="list default-colours default-margin hover">
 	{@render children?.()}
 </ul>
 
@@ -16,6 +16,5 @@
 	@reference "$routes/layout.css";
 
 	.list {
-		@apply border;
 	}
 </style>

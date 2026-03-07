@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { type Snippet } from "svelte";
-	import { twMerge } from "tw-merge";
 
 	type Props = {
 		children?: Snippet;
@@ -11,7 +10,7 @@
 </script>
 
 <button
-	class="btn default-colours default-margin hover-colours default-shadow hover-shadow active-colours active-shadow"
+	class="btn default-colours default-margin default-shadow hover active disabled"
 	{...props}
 >
 	{@render children?.()}
@@ -21,6 +20,6 @@
 	@reference "$routes/layout.css";
 
 	.btn {
-		@apply transform cursor-pointer border transition duration-200 disabled:cursor-not-allowed disabled:bg-transparent disabled:opacity-50;
+		@apply cursor-pointer;
 	}
 </style>
