@@ -1,45 +1,72 @@
 <script lang="ts">
-	import {
-		Button,
-		Card,
-		List,
-		Item,
-		Overlay,
-		Popup,
-		Select,
-		Option,
-		Textarea,
-		WebGLCanvas
-	} from "$components/ui";
-
-	let button_text = $state("click me");
-	const onclick = () => {
-		button_text = "clicked";
-	};
+	import { Card } from "$components/ui";
 </script>
 
-<main class="home-container page-margin">
-	<h1>MINIMATA</h1>
-	<Button {onclick}>{button_text}</Button>
-	<Card>Im a card</Card>
-	<List>
-		<Item>Im an item</Item>
-		<Item>Im another item</Item>
-	</List>
-	<Overlay>Im the overlay</Overlay>
-	<Popup>Im a popup</Popup>
-	<Select>
-		<Option>Option 1</Option>
-		<Option>Option 2</Option>
-	</Select>
-	<Textarea />
-	<WebGLCanvas />
-</main>
+<section class="demo-container">
+	<div class="demo-left">
+		<div class="function-selector">
+			<Card class="size-full" title="function selection"></Card>
+		</div>
+		<div class="visualization-window">
+			<Card class="size-full" title="visualization window"></Card>
+		</div>
+		<div class="algorithm-selector">
+			<Card class="size-full" title="algorithm selection"></Card>
+		</div>
+		<div class="function-builder">
+			<Card class="size-full" title="function builder"></Card>
+		</div>
+	</div>
+	<div class="demo-right">
+		<div class="hyperparameters">
+			<Card class="size-full" title="hyperparameters"></Card>
+		</div>
+		<div class="algorithm-builder">
+			<Card class="size-full" title="algorithm builder"></Card>
+		</div>
+	</div>
+</section>
 
 <style lang="postcss">
 	@reference "$routes/layout.css";
 
-	.home-container {
-		@apply flex size-full flex-col items-center gap-4 text-xl text-olive-200;
+	.demo-container {
+		@apply flex size-full gap-12 p-8;
+	}
+
+	.demo-left {
+		@apply flex min-h-0 flex-1 flex-col gap-8;
+	}
+
+	.function-selector {
+		@apply min-h-0 grow basis-1;
+	}
+
+	.visualization-window {
+		@apply min-h-0 basis-0;
+		flex-grow: 6;
+	}
+
+	.algorithm-selector {
+		@apply min-h-0 grow basis-0;
+	}
+
+	.function-builder {
+		@apply min-h-0 basis-0;
+		flex-grow: 2;
+	}
+
+	.demo-right {
+		@apply flex min-h-0 flex-1 flex-col gap-8;
+	}
+
+	.hyperparameters {
+		@apply min-h-0 basis-0;
+		flex-grow: 2;
+	}
+
+	.algorithm-builder {
+		@apply min-h-0 basis-0;
+		flex-grow: 3;
 	}
 </style>
