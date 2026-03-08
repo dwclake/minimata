@@ -1,7 +1,7 @@
 const ALPHA = 0.01;
 const EPSILON = 0.0001;
 
-type Hyperparameters = {
+type HyperParameters = {
 	alpha: number;
 	epsilon: number;
 };
@@ -9,5 +9,5 @@ type Hyperparameters = {
 export default function gradient_descent(
 	x: number,
 	y: number,
-	{ alpha = ALPHA, epsilon = EPSILON }: Hyperparameters
+	{ alpha = ALPHA, epsilon = EPSILON }: HyperParameters
 ) {}

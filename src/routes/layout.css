@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@source "../lib/**/*.{svelte,ts,js}";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
 
@@ -23,39 +22,23 @@
 	}
 
 	.default-colours {
-		@apply border-mirage-300 bg-mirage-700/30 text-olive-200;
+		@apply border-mirage-300 border bg-mirage-700/30 text-olive-200 shadow-mirage-300;
 	}
 
-	.alt-colours {
-		@apply border-mirage-950 bg-orchid/40 text-olive-200;
+	.hover {
+		@apply hover:border-mirage-950 hover:bg-orchid/40 hover:shadow-mirage-950 transition transform duration-300 ease-in-out;
 	}
 
-	.hover-colours {
-		@apply hover:border-mirage-950 hover:bg-orchid/40;
+	.active {
+		@apply active:bg-orchid-700/70 active:text-olive-200/50 active:shadow-sm-mirage-950/50 transition transform duration-300 ease-in-out;
 	}
 
-	.active-colours {
-		@apply active:bg-orchid/30;
-	}
-
-	.default-shadow {
-		@apply shadow-mirage-300;
-	}
-
-	.alt-shadow {
-		@apply shadow-mirage-950;
-	}
-
-	.hover-shadow {
-		@apply hover:shadow-mirage-950;
-	}
-
-	.active-shadow {
-		@apply active:shadow-sm-mirage-950/50;
+	.disabled {
+		@apply disabled:cursor-not-allowed disabled:bg-transparent disabled:opacity-50;
 	}
 
 	.default-margin {
-		@apply rounded-md p-2;
+		@apply rounded-sm p-2;
 	}
 
 	.page-margin {

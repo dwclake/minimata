@@ -8,14 +8,11 @@
 	const { children }: Props = $props();
 </script>
 
-<div class="popup default-margin default-colours default-shadow">
+<div class="popup default-margin default-colours hover">
 	{@render children?.()}
 </div>
 
 <style lang="postcss">
-	@reference "$routes/layout.css";
-
 	.popup {
-		@apply border;
 	}
 </style>

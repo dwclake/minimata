@@ -1,12 +1,10 @@
 <script lang="ts">
 </script>
 
-<textarea class="textarea default-colours default-margin default-shadow"> </textarea>
+<textarea class="textarea default-colours default-margin hover"> </textarea>
 
 <style lang="postcss">
-	@reference "$routes/layout.css";
-
 	.textarea {
-		@apply resize-none border;
+		@apply resize-none;
 	}
 </style>

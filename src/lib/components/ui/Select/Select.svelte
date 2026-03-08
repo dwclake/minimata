@@ -8,14 +8,11 @@
 	const { children }: Props = $props();
 </script>
 
-<select class="select default-colours default-margin default-shadow">
+<select class="select default-colours default-margin hover">
 	{@render children?.()}
 </select>
 
 <style lang="postcss">
-	@reference "$routes/layout.css";
-
 	.select {
-		@apply border;
 	}
 </style>
