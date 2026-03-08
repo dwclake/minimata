@@ -5,24 +5,24 @@
 <section class="demo-container">
 	<div class="demo-left">
 		<div class="function-selector">
-			<Card class="size-full">function selection</Card>
+			<Card class="size-full" title="function selection"></Card>
 		</div>
 		<div class="visualization-window">
-			<Card class="size-full">visualization window</Card>
+			<Card class="size-full" title="visualization window"></Card>
 		</div>
 		<div class="algorithm-selector">
-			<Card class="size-full">algorithm selection</Card>
+			<Card class="size-full" title="algorithm selection"></Card>
 		</div>
 		<div class="function-builder">
-			<Card class="size-full">function builder</Card>
+			<Card class="size-full" title="function builder"></Card>
 		</div>
 	</div>
 	<div class="demo-right">
 		<div class="hyperparameters">
-			<Card class="size-full">hyperparameters</Card>
+			<Card class="size-full" title="hyperparameters"></Card>
 		</div>
 		<div class="algorithm-builder">
-			<Card class="size-full">algorithm builder</Card>
+			<Card class="size-full" title="algorithm builder"></Card>
 		</div>
 	</div>
 </section>

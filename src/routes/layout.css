@@ -22,15 +22,15 @@
 	}
 
 	.default-colours {
-		@apply border-mirage-300 border bg-mirage-700/30 text-olive-200 shadow-mirage-300;
+		@apply border border-mirage-300 bg-mirage-700/30 text-olive-200 shadow-mirage-300;
 	}
 
 	.hover {
-		@apply hover:border-mirage-950 hover:bg-orchid/40 hover:shadow-mirage-950 transition transform duration-300 ease-in-out;
+		@apply transform transition duration-300 ease-in-out hover:border-mirage-950 hover:bg-orchid/40 hover:shadow-mirage-950;
 	}
 
 	.active {
-		@apply active:bg-orchid-700/70 active:text-olive-200/50 active:shadow-sm-mirage-950/50 transition transform duration-300 ease-in-out;
+		@apply transform transition duration-300 ease-in-out active:bg-orchid-700/70 active:text-olive-200/50 active:shadow-sm-mirage-950/50;
 	}
 
 	.disabled {
@@ -38,7 +38,7 @@
 	}
 
 	.default-margin {
-		@apply rounded-sm p-2;
+		@apply rounded-xs p-2;
 	}
 
 	.page-margin {
@@ -89,9 +89,13 @@
 	--color-mirage-950: #191825;
 
 	--shadow-mirage-300: 2px 2px var(--color-mirage-300);
+	--shadow-b-mirage-300: 0px 2px var(--color-mirage-300);
 	--shadow-sm-mirage-300: 1px 1px var(--color-mirage-300);
+	--shadow-b-sm-mirage-300: 0px 1px var(--color-mirage-300);
 	--shadow-mirage-950: 2px 2px var(--color-mirage-950);
+	--shadow-b-mirage-950: 0px 2px var(--color-mirage-950);
 	--shadow-sm-mirage-950: 1px 1px var(--color-mirage-950);
+	--shadow-b-sm-mirage-950: 0px 1px var(--color-mirage-950);
 
 	/*petite orchid*/
 	--color-orchid: #c37770;
