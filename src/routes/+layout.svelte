@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>MINIMATA</title>
+	<title>minimata</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
