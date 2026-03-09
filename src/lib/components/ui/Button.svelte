@@ -11,7 +11,7 @@
 </script>
 
 <button
-	class={"btn default-colours default-margin hover active disabled " + props.class}
+	class={"btn default-colours default-margin hover active disabled" + " " + props.class}
 	{onclick}
 >
 	{@render children?.()}
